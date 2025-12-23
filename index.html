@@ -25,7 +25,7 @@ body {
   color: var(--text);
 }
 
-/* ===== Glow ===== */
+/* ===== Glow Animation ===== */
 @keyframes glow {
   0% { box-shadow: 0 0 12px rgba(20,184,166,.2); }
   50% { box-shadow: 0 0 30px rgba(20,184,166,.45); }
@@ -141,6 +141,7 @@ h2::after {
   background-position: center;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 
 .flip-front::after {
@@ -203,9 +204,9 @@ footer {
 <section>
   <h2>Professional Summary</h2>
   <div class="card">
-    AI & Machine Learning Intern with strong hands-on experience in
-    Python, NLP, sentiment analysis, and generative AI.
-    Passionate about building real-world intelligent systems.
+    AI & Machine Learning Intern with hands-on experience in Python,
+    NLP, sentiment analysis, and generative AI. Passionate about
+    building intelligent real-world solutions.
   </div>
 
   <h2>Projects</h2>
@@ -214,51 +215,48 @@ footer {
 
     <div class="flip-card">
       <div class="flip-inner">
-        <div class="flip-front" style="background-image:url('https://unsplash.com/photos/blue-and-white-heart-illustration-k1xf2D7jWUs');">
+        <div class="flip-front" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800');">
           <h3>Twitter Sentiment Analysis</h3>
         </div>
         <div class="flip-back">
-          NLP-based sentiment classification system using
-          TF-IDF and machine learning models to analyze
-          public opinion from Twitter data.
+          NLP-based sentiment classification using TF-IDF and ML models
+          to analyze public opinion from Twitter data.
         </div>
       </div>
     </div>
 
     <div class="flip-card">
       <div class="flip-inner">
-        <div class="flip-front" style="background-image:url('https://unsplash.com/photos/a-blue-robot-sitting-on-top-of-a-table-WgRAbXRw_Wk');">
+        <div class="flip-front" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800');">
           <h3>AI Virtual Assistant</h3>
         </div>
         <div class="flip-back">
-          Python-based virtual assistant capable of executing
-          system commands and responding intelligently
-          using modular architecture.
+          Python-based AI assistant capable of executing commands,
+          automation tasks, and intelligent responses.
         </div>
       </div>
     </div>
 
     <div class="flip-card">
       <div class="flip-inner">
-        <div class="flip-front" style="background-image:url('https://unsplash.com/photos/a-person-holding-up-a-cell-phone-to-take-a-picture-jc0sgxRtbSs');">
+        <div class="flip-front" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800');">
           <h3>Ghibli Art Generator</h3>
         </div>
         <div class="flip-back">
-          Generative AI project creating Ghibli-style artwork
-          using prompt engineering and creative AI workflows.
+          Generative AI project that creates Studio Ghibli–style artwork
+          using prompt engineering and creative workflows.
         </div>
       </div>
     </div>
 
     <div class="flip-card">
       <div class="flip-inner">
-        <div class="flip-front" style="background-image:url('https://unsplash.com/photos/green-corn-maize-plants-on-a-field-agricultural-landscape-m6xWSjiQaww');">
+        <div class="flip-front" style="background-image:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800');">
           <h3>AgriConnect Platform</h3>
         </div>
         <div class="flip-back">
-          Agriculture-focused platform delivering information
-          and support through a clean, responsive interface.
-          <br><br>
+          Agriculture support platform providing information through
+          a clean and responsive interface.
         </div>
       </div>
     </div>
