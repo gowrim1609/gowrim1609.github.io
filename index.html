@@ -25,7 +25,7 @@ body {
   color: var(--text);
 }
 
-/* ===== Glow Animation ===== */
+/* ===== Glow ===== */
 @keyframes glow {
   0% { box-shadow: 0 0 12px rgba(20,184,166,.2); }
   50% { box-shadow: 0 0 30px rgba(20,184,166,.45); }
@@ -52,13 +52,27 @@ h1 {
   margin: 16px 0 6px;
 }
 
-p {
+.tagline {
   color: #cbd5f5;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  margin: 0 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .3s, opacity .3s;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  opacity: .8;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 22px;
+  margin-top: 24px;
   padding: 12px 28px;
   background: linear-gradient(135deg, #14b8a6, #0d9488);
   color: #022c22;
@@ -100,14 +114,13 @@ h2::after {
   animation: glow 6s infinite;
 }
 
-/* ===== Project Grid ===== */
+/* ===== Projects ===== */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
-/* ===== Flip Card ===== */
 .flip-card {
   perspective: 1000px;
 }
@@ -130,12 +143,10 @@ h2::after {
   height: 100%;
   border-radius: 18px;
   backface-visibility: hidden;
-  overflow: hidden;
   border: 1px solid rgba(255,255,255,.1);
   animation: glow 6s infinite;
 }
 
-/* ===== Front with Image ===== */
 .flip-front {
   background-size: cover;
   background-position: center;
@@ -156,16 +167,30 @@ h2::after {
   padding: 18px;
   margin: 0;
   color: var(--accent);
-  font-size: 20px;
 }
 
-/* ===== Back ===== */
 .flip-back {
   background: rgba(255,255,255,.07);
   transform: rotateY(180deg);
-  padding: 22px;
+  padding: 20px;
   font-size: 14px;
-  line-height: 1.6;
+}
+
+.flip-back a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== Contact ===== */
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* ===== Scroll Button ===== */
@@ -197,20 +222,26 @@ footer {
 <header>
   <img src="profession_photo.jpeg" class="profile-img" alt="Gowri M">
   <h1>Gowri M</h1>
-  <p><b>AI & Machine Learning Intern | NLP | Data Science</b></p>
+  <p class="tagline"><b>AI & Machine Learning Intern | NLP | Data Science</b></p>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/gowri-m-008212362" target="_blank">LinkedIn</a>
+    |
+    <a href="https://github.com/gowrim1609" target="_blank">GitHub</a>
+  </div>
+
   <a class="btn" href="Gowri_M_AI_ML_Intern_Resume.pdf" download>Download Resume</a>
 </header>
 
 <section>
   <h2>Professional Summary</h2>
   <div class="card">
-    AI & Machine Learning Intern with hands-on experience in Python,
-    NLP, sentiment analysis, and generative AI. Passionate about
-    building intelligent real-world solutions.
+    AI & Machine Learning Intern with hands-on experience in Python, NLP,
+    sentiment analysis, and generative AI. Actively seeking internship
+    opportunities to build intelligent, real-world solutions.
   </div>
 
   <h2>Projects</h2>
-
   <div class="project-grid">
 
     <div class="flip-card">
@@ -219,8 +250,9 @@ footer {
           <h3>Twitter Sentiment Analysis</h3>
         </div>
         <div class="flip-back">
-          NLP-based sentiment classification using TF-IDF and ML models
-          to analyze public opinion from Twitter data.
+          NLP sentiment classification using TF-IDF and ML models.
+          <br><br>
+          <a href="https://github.com/gowrim1609" target="_blank">View on GitHub</a>
         </div>
       </div>
     </div>
@@ -231,8 +263,9 @@ footer {
           <h3>AI Virtual Assistant</h3>
         </div>
         <div class="flip-back">
-          Python-based AI assistant capable of executing commands,
-          automation tasks, and intelligent responses.
+          Python-based assistant for command execution and automation.
+          <br><br>
+          <a href="https://github.com/gowrim1609" target="_blank">View on GitHub</a>
         </div>
       </div>
     </div>
@@ -243,8 +276,9 @@ footer {
           <h3>Ghibli Art Generator</h3>
         </div>
         <div class="flip-back">
-          Generative AI project that creates Studio Ghibli–style artwork
-          using prompt engineering and creative workflows.
+          Generative AI project using prompt engineering.
+          <br><br>
+          <a href="https://github.com/gowrim1609" target="_blank">View on GitHub</a>
         </div>
       </div>
     </div>
@@ -255,13 +289,22 @@ footer {
           <h3>AgriConnect Platform</h3>
         </div>
         <div class="flip-back">
-          Agriculture support platform providing information through
-          a clean and responsive interface.
+          Agriculture support platform with responsive UI.
+          <br><br>
+          <a href="https://gowri.fwh.is/" target="_blank">Live Demo</a>
         </div>
       </div>
     </div>
 
   </div>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>
+    📧 Email: <a href="mailto:gowrim1609@gmail.com">gowrim1609@gmail.com</a><br><br>
+    🔗 LinkedIn: <a href="https://www.linkedin.com/in/gowri-m-008212362" target="_blank">View Profile</a>
+  </p>
 </section>
 
 <footer>
